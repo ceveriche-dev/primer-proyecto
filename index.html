@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ecommerce Comida Rápida</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>🍔 Comida Rápida</h1>
+
+  <div class="productos">
+    <div class="producto">
+      <h3>Hamburguesa</h3>
+      <p>$10.000</p>
+      <button onclick="agregar('Hamburguesa', 10000)">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <h3>Perro Caliente</h3>
+      <p>$8.000</p>
+      <button onclick="agregar('Perro', 8000)">Agregar</button>
+    </div>
+
+    <div class="producto">
+      <h3>Papas</h3>
+      <p>$5.000</p>
+      <button onclick="agregar('Papas', 5000)">Agregar</button>
+    </div>
+  </div>
+
+  <h2>🛒 Carrito</h2>
+  <ul id="carrito"></ul>
+  <h3>Total: $<span id="total">0</span></h3>
+
+  <!-- Botón limpiar carrito -->
+  <button id="limpiar" onclick="limpiarCarrito()">Limpiar Carrito</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
